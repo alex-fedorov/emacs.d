@@ -1,0 +1,5 @@
+*.elc
+*.eld
+*~
+auto-save-list/
+elpa/archives/
