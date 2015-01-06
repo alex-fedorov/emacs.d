@@ -3,7 +3,7 @@
                          ("org" . "http://orgmode.org/elpa/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 (package-initialize)
 
 (defun require-package (package)
@@ -16,8 +16,14 @@
 
 ;; Evil mode
 (require 'evil)
-(evil-mode 1)
+(turn-on-evil-mode)
 (evil-space-default-setup)
+
+;; Force evil mode on buffer open
+(defun force-evil-mode-on (_)
+  (turn-on-evil-mode))
+
+(add-hook 'after-load-functions 'force-evil-mode-on)
 
 ;; evil-rebellion
 (add-to-list 'load-path "~/.emacs.d/bundle/evil-rebellion/")
