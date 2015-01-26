@@ -36,6 +36,8 @@
 (color-theme-approximate-on)
 
 ;; evil tabs
+(add-to-list 'load-path "~/.emacs.d/bundle/evil-tabs/")
+(require 'evil-tabs)
 (global-evil-tabs-mode t)
 
 ;; projectile
