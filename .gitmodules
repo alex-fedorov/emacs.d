@@ -1,6 +1,6 @@
 [submodule "bundle/evil-rebellion"]
 	path = bundle/evil-rebellion
 	url = https://github.com/tarleb/evil-rebellion
-[submodule "evil-tabs"]
-	path = evil-tabs
+[submodule "bundle/evil-tabs"]
+	path = bundle/evil-tabs
 	url = https://github.com/alex-fedorov/evil-tabs
